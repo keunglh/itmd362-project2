@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS starts here */
+
+body{
+
+/* For the longest time I debated whether or not I would use a "handwriting" style font.
+I had intended for this page to be a "collection" of thoughts,
+and as a result, I thought it was best to have something emulate
+that tone and characteristic. I had thought that it had looked fine on a desktop
+but some critiques by others had pointed out that the handwriting style was difficult to read.
+So, I ended up changing out the font to a much more "clean and blocked" style that should be both user friendly
+and agreeable with how I wanted the page to be.
+ */
+
+/* I also debated on if I should include a background image
+but with a media rich SINGLE PAGE, I felt that having such a
+large background image would only slow down the page and increase
+the loading time, which is why I decided to go with a simple color
+scheme that I feel can convey a good variety of feelings and thoughts.
+Orange and blue are relatively soothing and peaceful, while maintaining
+a constrasting strength*/
+
+  font-family: 'Droid Sans', sans-serif;
+	background-color: #ffbb5a;
+}
+#everything{
+	/* Approximately 1280px screens */
+	max-width: 80em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header{
+/* Though I wanted a handwriting font, the headers and headings I wanted
+to look clean and well formatted as an introduction to the page */
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em;
+  height: 3 em;
+
+	/* Made the clear opacity just to have a stronger contrast with font color */
+	color: rgba(52,136,255, 1);
+  background-color: #4d4d4d;
+	font-size-adjust: auto;
+}
+
+#heading{
+  font-size: 1.925em;
+	font-style: bold;
+  text-align: center;
+  max-width: 100%;
+  width: 90%;
+	margin: auto;
+}
+
+#subheading{
+	/*since I'm using the "min-width" media queries,
+	I didn't want to display the subheading until
+	certain sizes so the font doesn't spill over */
+  display:none;
+	line-height: 1.8em;
+	margin: auto;
+}
+
+figure > img{
+	clear: both;
+	display: block;
+	margin:auto;
+	width:15.313em;
+	max-width: 80%;
+
+	/* small QOL addition to images, a box shadow */
+	box-shadow: .25em .25em. .45em #20497F;
+	-moz-box-shadow: .25em 0.25em 0.45em #20497F;
+	-webkit-box-shadow: .25em 0.25em 0.45em #20497F;
+	-khtml-box-shadow: .25em 0.25em 0.45em #20497F;
+}
+
+figcaption{
+	/*using a fig caption instead of a <p> tag for image caption*/
+  font-size: .5em;
+	text-align: center;
+	padding-top: 1em;
+	max-width: 560px;
+}
+
+.content{
+  padding: 1em 2em;
+  margin: 1em auto;
+	width: 80%;
+	max-width: 100%;
+  position: relative;
+
+	/* depending how the screen is stretched or zoomed, this should be helpful */
+	-webkit-text-size-adjust: 100%;
+ 	-moz-text-size-adjust: 100%;
+ 	-ms-text-size-adjust: 100%;
+ 	text-size-adjust: 100%;
+  background-color: rgba(64,178,232,.8);
+}
+
+.content h2{
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.content p{
+	font-size: 1em;
+	display: block;
+	margin: auto;
+	text-align: left;
+	line-height: 1.2em;
+	width: 80%;
+	max-width: 100%;
+	padding-bottom: .6em;
+	padding-top: .3em;
+}
+
+#bold{
+		/* span attributes */
+	  font-weight: bold;
+	  font-size: .90em;
+}
+
+#links {
+	/* different font so that the link sticks out more,
+	breaks the doldrum at the end of the page */
+	font-family: 'Bitter', serif;
+}
+
+.btt{
+	/* back to top button */
+	width: 1.5em;
+	height: 1.5em;
+
+	/*ensures that it stays in the same place regardless of size and scrolling through the page */
+	position: fixed;
+	bottom: 1em;
+	right: .5em;
+	background:url('img/uppity.png') no-repeat center center;
+
+	/* I don't want it to appear, uses javascript so that after a certain amount of pixels scrolled it will appear then*/
+	/* Even if javascript is disabled, it's not too bad of a difference */
+	display: none;
+	-webkit-border-radius: .4em;
+	-moz-border-radius: .4em;
+	border-radius: .4em;
+	opacity: .6;
+}
+
+#flex_video{
+	/* flex container for youtube iframe */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 2em;
+	margin: 0;
+	display: flex;
+	display: -webkit-flexbox;
+	display: -moz-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+/* 550px arbitrary number that went well with my font and font sizes*/
+@media only screen and (min-width: 34.375em){
+#header{
+  height: 3.5em;
+}
+
+#heading{
+  font-size: 2.75em;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* can display subheading because larger screen, larger font and header height */
+#subheading{
+	display: block;
+	font-size: 1.25em;
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+}
+
+figure > img{
+  clear: both;
+	display: block;
+	margin-left: auto;
+	margin-bottom: 1.25em;
+	margin-right: auto;
+	width: 33.781em;
+	max-width: 100%;
+}
+
+figcaption{
+  font-size: .8em;
+	text-align: center;
+	margin-top: -1em;
+}
+
+.content{
+  padding: 1em 1.5em;
+  margin: 2em auto;
+  width: 80%;
+	max-width: 100%;
+  position: relative;
+  background-color: rgba(64,178,232,.8);
+}
+
+.content h2{
+	text-align: center;
+	font-size: 1.75em;
+  font-weight: bold;
+}
+
+.content p{
+  font-size: 1.25em;
+  display: block;
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+.btt{
+  width: 2.5em;
+  height: 2.5em;
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+  background:url('img/btt.png') no-repeat center center;
+  display: none;
+  -webkit-border-radius: .8em;
+  -moz-border-radius: .8em;
+  border-radius: .8em;
+}
+}
+
+/* 980 px */
+@media only screen and (min-width: 61.25em){
+#header{
+  height: 6.8em;
+}
+
+#heading{
+  font-size: 3.75em;
+}
+
+#subheading{
+	font-size: 1.75em;
+	display: block;
+  text-align: center;
+	width: 100%;
+}
+
+.content{
+  padding: 1em .8em;
+  margin: 2em auto;
+  width: 90%;
+	max-width: 100%;
+  position: relative;
+  background-color: rgba(64,178,232,.8);
+}
+
+figure > img{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 1.5em;
+  margin-right: auto;
+  width: 33.781em;
+  max-width: 100%;
+}
+
+figcaption{
+  font-size: 1em;
+	text-align: center;
+}
+
+.content h2{
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.content p{
+	width: 90%;
+	max-width: 100%;
+  font-size: 1.5em;
+  display: block;
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+.btt{
+  width: 2.5em;
+  height: 2.5em;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  background:url('img/btt.png') no-repeat center;
+  display: none;
+  -webkit-border-radius: .8em;
+  -moz-border-radius: .8em;
+  border-radius: .8em;
+}
+
+.flexbox{
+  padding: 1em 2em;
+  margin: 0;
+  display: flex;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+}
