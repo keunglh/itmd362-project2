@@ -71,12 +71,14 @@ a constrasting strength*/
   font-family: 'Droid Sans', sans-serif;
 	background-color: #ffbb5a;
 }
+
 #everything{
 	/* Approximately 1280px screens */
 	max-width: 80em;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #header{
 /* Though I wanted a handwriting font, the headers and headings I wanted
 to look clean and well formatted as an introduction to the page */
@@ -126,11 +128,15 @@ figure > img{
 }
 
 figcaption{
-	/*using a fig caption instead of a <p> tag for image caption*/
+	/*
+	Using a fig caption instead of a <p> tag for image caption
+	Specifically using pixels to help maintain an absolute width of the image.
+	*/
   font-size: .5em;
 	text-align: center;
 	padding-top: 1em;
-	max-width: 560px;
+	max-width: 540.5px;
+	margin: auto;
 }
 
 .content{
@@ -166,10 +172,9 @@ figcaption{
 	padding-top: .3em;
 }
 
-#bold{
-		/* span attributes */
-	  font-weight: bold;
-	  font-size: .90em;
+strong{
+		font-weight: bold;
+		font-size: 1.2em;
 }
 
 #links {
