@@ -89,9 +89,12 @@ to look clean and well formatted as an introduction to the page */
 	padding: 2em;
   height: 3 em;
 
-	-webkit-border-radius: 1.5em;
-	-moz-border-radius: 1.5em;
-	border-radius: 1.5em;
+	-webkit-border-top-left-radius: 1em;
+	-webkit-border-top-right-radius: 1em;
+	-moz-border-top-left-radius: 1em;
+	-moz-border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
 	/* Made the clear opacity just to have a stronger contrast with font color */
 	color: rgba(30,79,255, 1);
   background-color: #ffd66e;
@@ -99,7 +102,7 @@ to look clean and well formatted as an introduction to the page */
 }
 
 h1{
-  font-size: 1.925em;
+  font-size: 1.5em;
 	font-style: bold;
   text-align: center;
   max-width: 100%;
@@ -137,16 +140,18 @@ h2{
   padding: .2em 0;
   list-style-type: none;
   width: 100%;
-	margin-top: 1em;
 
-	-webkit-border-radius: 1.5em;
-	-moz-border-radius: 1.5em;
-	border-radius: 1.5em;
+	-webkit-border-bottom-left-radius: 1em;
+	-webkit-border-bottom-right-radius: 1em;
+	-moz-border-bottom-left-radius: 1em;
+	-moz-border-bottom-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 
 .navbar li {
   font-family: 'Noto Sans', sans-serif;
-  font-size: .7em;
+  font-size: .4em;
   font-weight: bold;
   height: 2.5em;
   padding: .4em 0.6em;
@@ -212,12 +217,12 @@ figcaption{
 
 .content h3{
 	text-align: center;
-	font-size: 1.55em;
+	font-size: .75em;
 	font-weight: bold;
 }
 
 .content p{
-	font-size: 1em;
+	font-size: .6em;
 	display: block;
 	margin: auto;
 	text-align: left;
