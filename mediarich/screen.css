@@ -89,6 +89,9 @@ to look clean and well formatted as an introduction to the page */
 	padding: 2em;
   height: 3 em;
 
+	-webkit-border-radius: 1.5em;
+	-moz-border-radius: 1.5em;
+	border-radius: 1.5em;
 	/* Made the clear opacity just to have a stronger contrast with font color */
 	color: rgba(30,79,255, 1);
   background-color: #ffd66e;
@@ -120,16 +123,25 @@ h2{
 }
 
 .navbar ul {
+	display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 	font-family: 'Noto Sans', sans-serif;
 	background-color: #FF823B;
   text-align: center;
   padding: .2em 0;
   list-style-type: none;
   width: 100%;
-}
+	margin-top: 1em;
 
-.navbar ul {
-	display: flex;
+	-webkit-border-radius: 1.5em;
+	-moz-border-radius: 1.5em;
+	border-radius: 1.5em;
 }
 
 .navbar li {
@@ -188,6 +200,9 @@ figcaption{
 	-webkit-text-size-adjust: 100%;
  	-moz-text-size-adjust: 100%;
  	-ms-text-size-adjust: 100%;
+	-webkit-border-radius: 1.5em;
+	-moz-border-radius: 1.5em;
+	border-radius: 1.5em;
  	text-size-adjust: 100%;
   background-color: rgba(64,178,232,.8);
 }
@@ -237,7 +252,7 @@ strong{
 	background:url('img/uppity.png') no-repeat center center;
 
 	/* I don't want it to appear, uses javascript so that after a certain amount of pixels scrolled it will appear then*/
-	/* Even if javascript is disabled, it's not too bad of a difference */
+	/* Even if javascript is disabled, it's not too bad of a difference to just press Home/End */
 	display: none;
 	-webkit-border-radius: .4em;
 	-moz-border-radius: .4em;

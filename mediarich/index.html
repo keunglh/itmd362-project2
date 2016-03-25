@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nojs">
   <head>
     <title>The Perplexed Premed</title>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
     </nav>
 
     <div class="content">
-        <h3>System.out.println("Hello World!");</h2>
+        <h3>System.out.println("Hello World!");</h3>
         <p>Hello World! Follow me in my life, academically and professionally!</p>
         <p>
           Well, I suppose this is the start of a new chapter for me. In most introductory programming classes,
@@ -119,21 +119,14 @@
     <script src="modernizr.js"></script>
     <script src="btt.js"></script>
     <script>
-      // handle links with @href started with '#' only
       $(document).on('click', 'a[href^="#"]', function(e) {
-          // target element id
           var id = $(this).attr('href');
 
-          // target element
           var $id = $(id);
           if ($id.length === 0) {
               return;
           }
-
-          // prevent standard hash navigation (avoid blinking in IE)
           e.preventDefault();
-
-          // top position relative to the document
           var pos = $(id).offset().top;
 
           // animated top scrolling
