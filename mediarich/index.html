@@ -10,20 +10,28 @@
 
 
   <body id="everything">
+
     <header id="header">
       <h1>The Perplexed Premed</h1>
       <h2>Confessions of a Technologically Adept Premed</h2>
     </header>
 
+    <nav>
+      <div class="navwrapper">
+        <ul id="nav" class="navbar">
+              <li class="nav nav1"><a href="#ragrets">Ain't Got No Ragrets</a></li>
+              <li class="nav nav2"><a href="#video-container">Darn Readmissions.</a></li>
+              <li class="nav nav3"><a href="#links">Wanna Read More?</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="content">
-        <h2>System.out.println("Hello World!");</h2>
-        <p>Hello World! Follow me in my life, academically, professionally, and rantastically!</p>
+        <h3>System.out.println("Hello World!");</h2>
+        <p>Hello World! Follow me in my life, academically and professionally!</p>
         <p>
           Well, I suppose this is the start of a new chapter for me. In most introductory programming classes,
-          this would be my “Hello World” post. This will be my metaphorical, "Hello From The Other Side! (of the screen)".
-          The post where I persuade myself that this is something worth learning,
-          and that this is something that I will fight on and succeed in. Like most things programming,
-          I run out of steam, I lose interest, and worst of all, I come to dread it.
+          this would be my “Hello World” post. This is my metaphorical, "Hello From The Other Side! (of the screen)".
         </p>
         <figure>
             <img src="img/hellootter.gif" alt="gif of AdeleHello">
@@ -32,7 +40,7 @@
     </div>
 
     <div class="content">
-        <p>
+        <p id="ragrets">
           <strong>However!</strong> This will be a chapter that started in the middle of my second semester of my second year in
           college. A chapter that not only marks my growth and maturation, but also where and when I require an
           outlet for my thoughts, feelings, and rants. This <strong>WILL</strong> be a chapter that I can proudly look back it,
@@ -45,26 +53,23 @@
         <p>
           Inspired by medical blogs and websites that I read for news and content, I wanted to create
           something of my own that can encapsulate my own thoughts, views, and ideas along with my knack
-          and passion for technology itself. 0
-        </p>
-        <p>
-          I’m someone who is driven by understanding more about the
-          interoperability of Electronic Health Records (EHR) as well as the ongoing standardization of
-          the protected health information (PHI) and how they can be SECURELY transmitted.
-        </p>
-        <p>
-          Below, I've linked a video from a YouTuber that is a "physician, off-white rapper, and purveyor of the finest medical <strong>
-          satire</strong>. These specific videos highlight issues that I am very interested in myself as it pulls into relevance
-          the topic of Health IT and how it <b>should and could</b> be used to improve health outcomes.
+          and passion for technology itself. As a result, I will be dedicating this site to track and follow
+          my journey though Fred Trotter and David Uhlman's book regarding standards, workflows, and meaningful use
+          of private health information in healthcare today, "Hacking Healthcare" which can be found
+          <a href="http://www.amazon.com/Hacking-Healthcare-Standards-Workflows-Meaningful/dp/1449305024/ref=sr_1_1?ie=UTF8&qid=1458875491&sr=8-1&keywords=hacking+healthcare" id="links">here!</a>
         </p>
     </div>
 
     <div class="content">
-      <div id="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aS3xaXsh6vo" frameborder="0" allowfullscreen></iframe>
+      <p>
+        Below, I've linked a video from a YouTuber that is a "physician, off-white rapper, and purveyor of the finest medical <strong>
+        satire</strong>. These specific videos highlight issues that I am very interested in myself as it pulls into relevance
+        the topic of Health IT and how it <b>should and could</b> be used to improve health outcomes.
+      </p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aS3xaXsh6vo" frameborder="0" allowfullscreen>Readmission by ZDoggMD</iframe>
       </div>
-
-      <div id="video_desc">
+      <div id="video-desc">
         <p> Readmission, cleverly remixed from one of the many R. Kelly hits, Ignition, is an eye-opening about the medical
           and financial burden of what is known as the "revolving door" in medical admissions and healthcare.
           Readmission is a large factor and issue today not only for the American healthcare system,

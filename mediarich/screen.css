@@ -69,7 +69,7 @@ Orange and blue are relatively soothing and peaceful, while maintaining
 a constrasting strength*/
 
   font-family: 'Droid Sans', sans-serif;
-	background-color: #ffbb5a;
+	background-color: #48577F;
 }
 
 #everything{
@@ -90,8 +90,8 @@ to look clean and well formatted as an introduction to the page */
   height: 3 em;
 
 	/* Made the clear opacity just to have a stronger contrast with font color */
-	color: rgba(52,136,255, 1);
-  background-color: #4d4d4d;
+	color: rgba(30,79,255, 1);
+  background-color: #ffd66e;
 	font-size-adjust: auto;
 }
 
@@ -112,6 +112,53 @@ h2{
 	line-height: 1.8em;
 	margin: auto;
 }
+
+
+.nav {
+	flex: 1;
+	margin-top: 1.2em;
+}
+
+.navwrapper ul {
+	background-color: #000F42;
+  	text-align: center;
+  	padding: .2em 0;
+  	margin: 0em;
+  	list-style-type: none;
+  	width: 100%;
+  	font-family: 'Noto Sans', sans-serif;
+}
+
+.navwrapper ul {
+	display: flex;
+}
+
+.navwrapper li {
+  	font-family: 'Noto Sans', sans-serif;
+  	font-size: 0.60em;
+  	font-weight: bold;
+  	height: 2.5em;
+  	padding: .2em 0.5em 0.5em 0.5em;
+}
+
+.navwrapper a {
+	text-decoration: none;
+  	color: #fff;
+  	display: block;
+  	transition: .3s background-color;
+}
+
+.navwrapper a:hover {
+	background-color: #42BCFF;
+	padding: 1em;
+}
+
+.navwrapper a.active {
+	background-color: #fff;
+  	color: #444;
+  	cursor: default;
+}
+
 
 figure > img{
 	clear: both;
@@ -140,12 +187,11 @@ figcaption{
 }
 
 .content{
-  padding: 1em 2em;
   margin: 1em auto;
-	width: 80%;
+	width: 100%;
 	max-width: 100%;
   position: relative;
-
+	padding: .25em 0;
 	/* depending how the screen is stretched or zoomed, this should be helpful */
 	-webkit-text-size-adjust: 100%;
  	-moz-text-size-adjust: 100%;
@@ -154,7 +200,7 @@ figcaption{
   background-color: rgba(64,178,232,.8);
 }
 
-.content h2{
+.content h3{
 	text-align: center;
 	font-size: 1.25em;
 	font-weight: bold;
@@ -203,20 +249,22 @@ strong{
 	opacity: .6;
 }
 
-#video-container{
+.video-container{
 	position: relative;
 	padding-bottom: 56.25%;
-	paddiing-top: 35px;
-	height: 0;
+	padding-top: 1.8em;
+	height: 0em;
 	overflow: hidden;
+	border: 0em;
 	}
 
-#video-container{
-	position: relative;
+.video-container iframe{
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100;
+	height: 100%;
+	border: 0em;
 }
 
 /* 550px arbitrary number that went well with my font and font sizes*/
@@ -284,13 +332,14 @@ figcaption{
   height: 2.5em;
   position: fixed;
   bottom: 3em;
-  right: 2em;
+  right: 1.15em;
   background:url('img/btt.png') no-repeat center center;
   display: none;
   -webkit-border-radius: .8em;
   -moz-border-radius: .8em;
   border-radius: .8em;
 }
+
 }
 
 /* 980 px */
@@ -359,18 +408,5 @@ figcaption{
   -webkit-border-radius: .8em;
   -moz-border-radius: .8em;
   border-radius: .8em;
-}
-
-.flexbox{
-  padding: 1em 2em;
-  margin: 0;
-  display: flex;
-  display: -webkit-flexbox;
-  display: -moz-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 }
