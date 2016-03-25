@@ -95,7 +95,7 @@ to look clean and well formatted as an introduction to the page */
 	font-size-adjust: auto;
 }
 
-#heading{
+h1{
   font-size: 1.925em;
 	font-style: bold;
   text-align: center;
@@ -104,7 +104,7 @@ to look clean and well formatted as an introduction to the page */
 	margin: auto;
 }
 
-#subheading{
+h2{
 	/*since I'm using the "min-width" media queries,
 	I didn't want to display the subheading until
 	certain sizes so the font doesn't spill over */
@@ -203,22 +203,21 @@ strong{
 	opacity: .6;
 }
 
-#flex_video{
-	/* flex container for youtube iframe */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 1em 2em;
-	margin: 0;
-	display: flex;
-	display: -webkit-flexbox;
-	display: -moz-flexbox;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
+#video-container{
+	position: relative;
+	padding-bottom: 56.25%;
+	paddiing-top: 35px;
+	height: 0;
+	overflow: hidden;
 	}
+
+#video-container{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100;
+}
 
 /* 550px arbitrary number that went well with my font and font sizes*/
 @media only screen and (min-width: 34.375em){
@@ -226,7 +225,7 @@ strong{
   height: 3.5em;
 }
 
-#heading{
+h1{
   font-size: 2.75em;
   text-align: center;
   max-width: 100%;
@@ -234,7 +233,7 @@ strong{
 }
 
 /* can display subheading because larger screen, larger font and header height */
-#subheading{
+h2{
 	display: block;
 	font-size: 1.25em;
 	text-align: center;
@@ -300,11 +299,11 @@ figcaption{
   height: 6.8em;
 }
 
-#heading{
+h1{
   font-size: 3.75em;
 }
 
-#subheading{
+h2{
 	font-size: 1.75em;
 	display: block;
   text-align: center;
