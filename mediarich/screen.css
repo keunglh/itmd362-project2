@@ -120,13 +120,12 @@ h2{
 }
 
 .navbar ul {
-	background-color: #000F42;
-  	text-align: center;
-  	padding: .2em 0;
-  	margin: 0em;
-  	list-style-type: none;
-  	width: 100%;
-  	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #FF823B;
+  text-align: center;
+  padding: .2em 0;
+  list-style-type: none;
+  width: 100%;
 }
 
 .navbar ul {
@@ -134,31 +133,24 @@ h2{
 }
 
 .navbar li {
-  	font-family: 'Noto Sans', sans-serif;
-  	font-size: .6em;
-  	font-weight: bold;
-  	height: 2.5em;
-  	padding: .2em 0.5em 0.5em 0.5em;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: .7em;
+  font-weight: bold;
+  height: 2.5em;
+  padding: .4em 0.6em;
 }
 
 .navbar a {
 	text-decoration: none;
-  	color: #fff;
-  	display: block;
-  	transition: .3s background-color;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
 }
 
 .navbar a:hover {
-	background-color: #42BCFF;
-	padding: 1em;
+	background-color: #43B2E8;
+	padding: .8em;
 }
-
-.navbar a.active {
-	background-color: #fff;
-  	color: #444;
-  	cursor: default;
-}
-
 
 figure > img{
 	clear: both;
@@ -202,7 +194,7 @@ figcaption{
 
 .content h3{
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 1.55em;
 	font-weight: bold;
 }
 
@@ -310,15 +302,15 @@ figcaption{
 }
 
 .content{
-  padding: 1em 1.5em;
+  padding: 1em .8em;
   margin: 2em auto;
-  width: 80%;
+  width: 90%;
 	max-width: 100%;
   position: relative;
   background-color: rgba(64,178,232,.8);
 }
 
-.content h2{
+.content h3{
 	text-align: center;
 	font-size: 1.75em;
   font-weight: bold;
@@ -367,32 +359,8 @@ h2{
 	width: 100%;
 }
 
-.content{
-  padding: 1em .8em;
-  margin: 2em auto;
-  width: 90%;
-	max-width: 100%;
-  position: relative;
-  background-color: rgba(64,178,232,.8);
-}
-
-figure > img{
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 1.5em;
-  margin-right: auto;
-  width: 33.781em;
-  max-width: 100%;
-}
-
-figcaption{
-  font-size: 1em;
-	text-align: center;
-}
-
-.content h2{
-  font-size: 2.0em;
+.content h3{
+  font-size: 2em;
   font-weight: bold;
 }
 
