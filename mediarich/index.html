@@ -56,7 +56,7 @@
           and passion for technology itself. As a result, I will be dedicating this site to track and follow
           my journey though Fred Trotter and David Uhlman's book regarding standards, workflows, and meaningful use
           of private health information in healthcare today, "Hacking Healthcare" which can be found
-          <a href="http://www.amazon.com/Hacking-Healthcare-Standards-Workflows-Meaningful/dp/1449305024/ref=sr_1_1?ie=UTF8&qid=1458875491&sr=8-1&keywords=hacking+healthcare" id="links">here!</a>
+          <a href="http://www.amazon.com/Hacking-Healthcare-Standards-Workflows-Meaningful/dp/1449305024/ref=sr_1_1?ie=UTF8&qid=1458875491&sr=8-1&keywords=hacking+healthcare" id="books">here!</a>
         </p>
     </div>
 
@@ -118,4 +118,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="modernizr.js"></script>
     <script src="btt.js"></script>
+    <script>
+      // handle links with @href started with '#' only
+      $(document).on('click', 'a[href^="#"]', function(e) {
+          // target element id
+          var id = $(this).attr('href');
+
+          // target element
+          var $id = $(id);
+          if ($id.length === 0) {
+              return;
+          }
+
+          // prevent standard hash navigation (avoid blinking in IE)
+          e.preventDefault();
+
+          // top position relative to the document
+          var pos = $(id).offset().top;
+
+          // animated top scrolling
+          $('body, html').animate({scrollTop: pos});
+      });
+    </script>
 </html>
