@@ -281,6 +281,9 @@ strong{
 	height: 0em;
 	overflow: hidden;
 	border: 0em;
+	max-width: 45em;
+	/* 720 px */
+	margin: auto;
 	}
 
 .video-container iframe{
@@ -404,6 +407,10 @@ h2{
   display: block;
   padding-bottom: 1em;
   padding-top: .5em;
+}
+
+.video-container{
+	width: 45em;
 }
 
 .btt{
